@@ -1,0 +1,54 @@
+{
+  "components": [
+    {
+      "text": "# Student Leave Request",
+      "type": "text",
+      "id": "Field_heading"
+    },
+    {
+      "label": "Student Name",
+      "type": "textfield",
+      "id": "Field_studentName",
+      "key": "studentName",
+      "validate": { "required": true }
+    },
+    {
+      "label": "Student ID",
+      "type": "textfield",
+      "id": "Field_studentId",
+      "key": "studentId",
+      "validate": { "required": true }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Leave Date",
+      "type": "datetime",
+      "id": "Field_leaveDate",
+      "key": "leaveDate",
+      "validate": { "required": true }
+    },
+    {
+      "label": "Number of Days",
+      "type": "number",
+      "id": "Field_duration",
+      "key": "duration",
+      "validate": { "required": true, "min": 1 }
+    },
+    {
+      "label": "Reason for Leave",
+      "type": "textarea",
+      "id": "Field_reason",
+      "key": "reason",
+      "validate": { "required": true }
+    }
+  ],
+  "type": "default",
+  "id": "student_leave_form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "schemaVersion": 16
+}
